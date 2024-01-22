@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="addon">
+  <id>llc.snow.contract-explorer</id>
+  <extends>io.elementary.switchboard</extends>
+  <translation type="gettext">contract-explorer</translation>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+
+  <icon type="stock">system-run</icon>
+  <name>Contract Explorer</name>
+  <summary>xplore installed desktop integration contracts</summary>
+
+	<!-- TODO: Add a screenshot -->
+  <!--<screenshots>-->
+  <!--  <screenshot type="default">-->
+  <!--    <image>https://raw.githubusercontent.com/elementary/switchboard-plug-display/7.0.0/data/screenshot.png</image>-->
+  <!--  </screenshot>-->
+  <!--</screenshots>-->
+
+  <url type="bugtracker">https://github.com/snow-developments/contract-explorer/issues</url>
+  <url type="donation">https://elementary.io/get-involved#funding</url>
+  <url type="help">https://github.com/snow-developments/contract-explorer/discussions</url>
+  <url type="homepage">https://snow.llc/#products</url>
+  <!-- TODO: Add translation link for engagement -->
+  <!--<url type="translate">https://l10n.elementary.io/engage/switchboard/</url>-->
+
+  <developer_name>Snow Developments, LLC</developer_name>
+  <project_group>snow-developments</project_group>
+  <update_contact>contact@snow.llc</update_contact>
+
+  <releases>
+    <!-- TODO: <release version="0.2.0" date="2020-04-08" urgency="medium" />-->
+    <release version="0.1.0" date="2019-11-15" urgency="medium" />
+  </releases>
+</component>

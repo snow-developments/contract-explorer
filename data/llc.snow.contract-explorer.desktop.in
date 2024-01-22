@@ -1,0 +1,17 @@
+[Desktop Entry]
+Type=Application
+Name=Contract Explorer
+Comment=Explore installed desktop integration contracts
+Categories=System;
+Keywords=folder;manager;explore;disk;filesystem;
+GenericName=System Setting
+Exec=@exec_name@ %U
+Icon=@exec_name@
+Terminal=false
+X-GNOME-Gettext-Domain=@exec_name@
+Actions=NewContract;
+
+[Desktop Action NewContract]
+Name=New Contract
+Exec=@exec_name@ -n
+
