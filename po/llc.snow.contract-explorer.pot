@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the llc.snow.contract-explorer package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: llc.snow.contract-explorer\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-22 10:16-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/Application.vala:14
+msgid "Foobar"
+msgstr ""
+
+#: data/contract-explorer.desktop.in:4
+#: data/contract-explorer.metainfo.xml.in:10
+msgid "Contract Explorer"
+msgstr ""
+
+#: data/contract-explorer.desktop.in:5
+#: data/contract-explorer.metainfo.xml.in:11
+msgid "Explore installed desktop integration contracts"
+msgstr ""
+
+#: data/contract-explorer.desktop.in:7
+msgid "folder;manager;explore;disk;filesystem;"
+msgstr ""
+
+#: data/contract-explorer.desktop.in:8
+msgid "System Setting"
+msgstr ""
+
+#: data/contract-explorer.desktop.in:10
+msgid "@exec_name@"
+msgstr ""
+
+#: data/contract-explorer.desktop.in:16
+msgid "New Contract"
+msgstr ""
+
+#. TODO: Add translation link for engagement
+#. <url type="translate">https://l10n.elementary.io/engage/switchboard/</url>
+#: data/contract-explorer.metainfo.xml.in:27
+msgid "Snow Developments, LLC"
+msgstr ""

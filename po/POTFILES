@@ -1,0 +1,4 @@
+src/Application.vala
+data/contract-explorer.contract.in
+data/contract-explorer.desktop.in
+data/contract-explorer.metainfo.xml.in
