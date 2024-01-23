@@ -8,7 +8,7 @@
 
   <icon type="stock">system-run</icon>
   <name>Contract Explorer</name>
-  <summary>xplore installed desktop integration contracts</summary>
+  <summary>Explore installed desktop integration contracts</summary>
 
 	<!-- TODO: Add a screenshot -->
   <!--<screenshots>-->

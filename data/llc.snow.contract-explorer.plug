@@ -1,7 +1,0 @@
-[Plug Entry]
-Type=Application
-Name=Contract Explorer
-GenericName=Switchboard Plug
-Comment=Explore installed desktop integration contracts
-Description=Explore installed desktop integration contracts
-Icon=system-run

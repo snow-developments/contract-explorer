@@ -21,13 +21,25 @@ add_project_arguments(
 )
 
 # Set our translation domain
-add_global_arguments('-DGETTEXT_PACKAGE="@0@" -w'.format (meson.project_name()), language:'c')
+add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format (meson.project_name()), language:'c')
 
 # Dependencies
 min_glib_version = '2.56.0'
 
 glib_dep = dependency('glib-2.0', version: '>=' + min_glib_version)
 gobject_dep = dependency('gobject-2.0', version: '>=' + min_glib_version)
+# TODO: Add adwaita for fancyness
+# adwaita_dep = dependency(
+#   'libadwaita-1',
+#   version: '>=1.0.0',
+#   fallback: ['libadwaita', 'libadwaita_dep'],
+#   default_options: [
+#     'examples=false',
+#     'introspection=enabled',
+#     'tests=false',
+#     'vapi=true',
+#   ]
+# )
 
 # Configuration
 config_data = configuration_data()
@@ -49,45 +61,11 @@ executable(
   # 'src/Settings.vala',
   dependencies: [
     glib_dep,
+    dependency('gee-0.8'),
     dependency('gtk+-3.0', version: '>=3.20.0'),
     dependency('granite', version: '>=5.0.0'),
-    dependency('libadwaita', version: '>=1.0.0'),
     dependency('sqlite3'),
   ],
   install: true
 )
-
-# Translate and install .desktop file
-i18n.merge_file(
-  input: join_paths('data', meson.project_name() + '.desktop.in'),
-  output: meson.project_name() + '.desktop',
-  po_dir: join_paths(meson.source_root(), 'po'),
-  type: 'desktop',
-  install: true,
-  install_dir: join_paths(get_option('datadir'), 'applications')
-)
-
-# Translate and install .appdata file
-i18n.merge_file(
-  input: join_paths('data', meson.project_name() + '.appdata.xml.in'),
-  output: meson.project_name() + '.appdata.xml',
-  po_dir: join_paths(meson.source_root(), 'po'),
-  install: true,
-  install_dir: join_paths(get_option('datadir'), 'metainfo')
-)
-
-# Install .contract file so Files will see it
-install_data(
-  join_paths('data', meson.project_name() + '.contract'),
-  install_dir: join_paths(get_option('datadir'), 'contractor')
-)
-
-# Install icons
-icon_sizes = ['32', '48', '64']
-foreach i : icon_sizes
-  install_data(
-    join_paths('data', 'icons', 'scalable', i, meson.project_name() + '.svg'),
-    install_dir: join_paths(get_option('datadir'), 'icons', 'hicolor', i + 'x' + i, 'apps')
-  )
-endforeach
 

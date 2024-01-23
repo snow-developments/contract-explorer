@@ -1,0 +1,7 @@
+[Contractor Entry]
+Name=Add a new file action...
+Icon=system-run
+Description=Create a new desktop integration contract
+MimeType=!inode;
+Exec=@exec_name@ -n %F
+X-GNOME-Gettext-Domain=contract-explorer
